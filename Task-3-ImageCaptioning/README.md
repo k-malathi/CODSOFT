@@ -1,16 +1,26 @@
-# Task 3 - Image Captioning AI
+# Task 3 - Image Captioning AI 🖼️
 
-This project generates captions for input images using a pretrained Vision Transformer model.
+This project generates captions for images using a pretrained Vision Transformer model.
+
+---
 
 ## 🚀 Features
-- Input image processing
-- Pretrained AI model usage
-- Generates automatic image captions
+- Takes image as input
+- Generates caption using AI model
 
-## 🧠 Tech Stack
+---
+
+## 🧠 Tech Used
 - Python
 - Hugging Face Transformers
 - PyTorch
 
-## 📌 Output Example
+---
+
+## ▶️ How to Run
+python app.py
+
+---
+
+## 📌 Example Output
 "A dog sitting on grass"
