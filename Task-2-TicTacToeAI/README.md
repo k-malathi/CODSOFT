@@ -1,11 +1,20 @@
-# Task 2 - Tic Tac Toe AI
+# Task 2 - Tic Tac Toe AI 
 
-Game where user plays against computer.
+A simple AI game where user plays against computer.
 
-## Features
-- AI opponent
-- Random moves
-- Terminal game
+---
 
-## Run
+##  Features
+- 3x3 board game
+- Player vs Computer
+- Random AI moves
+
+---
+
+##  How to Run
 python app.py
+
+---
+
+##  Example
+You choose X or O and play in terminal
