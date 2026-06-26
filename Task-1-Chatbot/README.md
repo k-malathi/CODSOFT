@@ -1,5 +1,10 @@
-# Task 1 - Rule Based Chatbot
+# Task 1 - Chatbot
 
-This project is created as part of CodSoft Artificial Intelligence Internship.
+Simple rule-based chatbot using Python.
 
-A simple chatbot that responds to user inputs using predefined rules.
+## Features
+- Answers basic questions
+- Uses if-else logic
+
+## Run
+python app.py
