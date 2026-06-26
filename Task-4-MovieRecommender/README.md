@@ -1,22 +1,22 @@
-# Task 4 - Movie Recommendation System 🎬
+# Task 4 - Movie Recommendation System 
 
 Recommends movies based on genre similarity.
 
 ---
 
-## 🚀 Features
+##  Features
 - Input movie name
 - Suggest similar movies
 - Simple recommendation logic
 
 ---
 
-## ▶️ How to Run
+##  How to Run
 python app.py
 
 ---
 
-## 📌 Example
+##  Example
 Input: Avengers  
 Output:
 - Iron Man
