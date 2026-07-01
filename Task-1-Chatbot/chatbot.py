@@ -20,14 +20,7 @@ class RuleBasedChatbot:
     def __init__(self, name="CodBot"):
         self.name = name
 
-        # -----------------------------------------------------------
-        # RULE SET
-        # Each rule is a tuple: (intent_name, [regex_patterns], [responses])
-        # The chatbot checks the user's input against each pattern list,
-        # in order, and returns a random response from the first intent
-        # that matches. This keeps rules easy to read and extend --
-        # just add a new tuple to this list to teach the bot a new topic.
-        # -----------------------------------------------------------
+       
         self.rules = [
             (
                 "greeting",
@@ -77,7 +70,7 @@ class RuleBasedChatbot:
             ),
         ]
 
-        # Fallback responses used when no rule matches
+       
         self.fallback_responses = [
             "Sorry, I didn't quite understand that. Could you rephrase?",
             "I'm not sure how to respond to that yet. Try asking something else!",
@@ -92,17 +85,17 @@ class RuleBasedChatbot:
         """
         text = user_input.lower().strip()
 
-        # Empty input edge case
+        
         if not text:
             return "You didn't say anything -- I'm listening!"
 
-        # Check each rule in order; return on first match
+       
         for intent, patterns, responses in self.rules:
             for pattern in patterns:
                 if re.search(pattern, text):
                     return random.choice(responses)
 
-        # No rule matched -> fallback
+       
         return random.choice(self.fallback_responses)
 
     def chat(self):
@@ -116,20 +109,17 @@ class RuleBasedChatbot:
                 break
 
 
-# -----------------------------------------------------------------
-# TEST RUN — demonstrates the chatbot handling several query types
-# without needing manual input. Run this file directly to see it.
-# -----------------------------------------------------------------
+
 if __name__ == "__main__":
     bot = RuleBasedChatbot()
 
     test_inputs = [
-        "Hello there!",                  # greeting
-        "What can you do?",              # help
-        "Who created you?",              # creator
-        "asdkjhaslkdjh random text",     # unrecognized input -> fallback
-        "Thanks a lot!",                 # thanks
-        "Bye!",                          # farewell
+        "Hello there!",                  
+        "What can you do?",              
+        "Who created you?",              
+        "asdkjhaslkdjh random text",     
+        "Thanks a lot!",                 
+        "Bye!",                          
     ]
 
     print("=== Automated Test Run ===\n")
@@ -137,5 +127,4 @@ if __name__ == "__main__":
         print(f"You: {msg}")
         print(f"{bot.name}: {bot.get_response(msg)}\n")
 
-    # Uncomment the line below to chat interactively in the terminal:
-    # bot.chat()
+   
