@@ -2,7 +2,7 @@
 
 ## CODSOFT Artificial Intelligence Internship
 
-### 📌 Overview
+###  Overview
 This project is a simple **rule-based chatbot** built in Python. It identifies
 user intent by matching input text against predefined regex/keyword patterns
 and responds using a structured set of rules — no external NLP libraries required.
@@ -14,7 +14,7 @@ This task demonstrates the fundamentals of:
 
 ---
 
-### 🛠️ How It Works
+###  How It Works
 1. The user's input is lowercased and cleaned.
 2. The chatbot checks the input against a list of **rules**, where each rule
    contains:
@@ -31,7 +31,7 @@ tuple to the `self.rules` list in `chatbot.py`.
 
 ---
 
-### 💬 Supported Intents
+###  Supported Intents
 | Intent         | Example Trigger Phrases                     |
 |----------------|----------------------------------------------|
 | Greeting       | "hi", "hello", "good morning"                |
@@ -46,7 +46,7 @@ tuple to the `self.rules` list in `chatbot.py`.
 
 ---
 
-### ▶️ How to Run
+###  How to Run
 
 **Requirements:** Python 3.x (no external libraries needed)
 
@@ -70,7 +70,7 @@ or `exit` to end the conversation.
 
 ---
 
-### 📂 Files
+###  Files
 ```
 chatbot.py    # Full chatbot implementation + test run
 README.md     # Project documentation (this file)
@@ -78,7 +78,7 @@ README.md     # Project documentation (this file)
 
 ---
 
-### 🧠 Example Interaction
+###  Example Interaction
 ```
 You: Hello there!
 CodBot: Hi there! What can I do for you?
@@ -95,7 +95,7 @@ CodBot: Goodbye! Have a great day!
 
 ---
 
-### 🚀 Possible Extensions
+###  Possible Extensions
 - Add more intents/rules (weather, jokes, FAQs)
 - Use `difflib` or fuzzy matching for typo tolerance
 - Wrap in a simple web UI (Flask/Streamlit)
